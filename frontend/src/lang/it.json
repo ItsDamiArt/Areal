@@ -1,0 +1,53 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "Chi siamo",
+        "menu": "Menù",
+        "profile": "Area riservata",
+        "reservations": "Prenotazioni",
+        "login": "Accedi",
+        "register": "Registrati",
+        "logout": "Esci"
+    },
+    "auth": {
+        "loginTitle": "Accedi al tuo account",
+        "registerTitle": "Crea un account",
+        "email": "Email",
+        "password": "Password",
+        "name": "Nome",
+        "surname": "Cognome",
+        "loginButton": "Accedi",
+        "registerButton": "Registrati",
+        "logoutButton": "Esci",
+        "alreadyHaveAccount": "Hai già un account?",
+        "dontHaveAccount": "Non hai un account?",
+        "loginHere": "Accedi qui",
+        "registerHere": "Registrati qui"
+    },
+    "reservations": {
+        "title": "Le Mie Prenotazioni",
+        "noReservations": "Nessuna prenotazione trovata",
+        "createNew": "Nuova Prenotazione",
+        "date": "Data",
+        "guests": "Ospiti",
+        "notes": "Note",
+        "delete": "Elimina",
+        "confirmDelete": "Sei sicuro di voler eliminare questa prenotazione?",
+        "cancel": "Annulla"
+    },
+    "common": {
+        "loading": "Caricamento...",
+        "error": "Errore",
+        "success": "Operazione completata con successo",
+        "save": "Salva",
+        "cancel": "Annulla"
+    },
+    "errors": {
+        "requiredField": "Campo obbligatorio",
+        "invalidEmail": "Email non valida",
+        "passwordTooShort": "Password troppo corta (minimo 8 caratteri)",
+        "loginFailed": "Email o password errati",
+        "notAuthenticated": "Devi effettuare l'accesso",
+        "networkError": "Errore di connessione"
+    }
+}

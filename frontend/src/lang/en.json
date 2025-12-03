@@ -1,0 +1,53 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "menu": "Menu",
+        "profile": "Private Area",
+        "reservations": "Reservations",
+        "login": "Login",
+        "register": "Sign Up",
+        "logout": "Logout"
+    },
+    "auth": {
+        "loginTitle": "Login to your account",
+        "registerTitle": "Create an account",
+        "email": "Email",
+        "password": "Password",
+        "name": "First Name",
+        "surname": "Last Name",
+        "loginButton": "Login",
+        "registerButton": "Sign Up",
+        "logoutButton": "Logout",
+        "alreadyHaveAccount": "Already have an account?",
+        "dontHaveAccount": "Don't have an account?",
+        "loginHere": "Login here",
+        "registerHere": "Sign up here"
+    },
+    "reservations": {
+        "title": "My Reservations",
+        "noReservations": "No reservations found",
+        "createNew": "New Reservation",
+        "date": "Date",
+        "guests": "Guests",
+        "notes": "Notes",
+        "delete": "Delete",
+        "confirmDelete": "Are you sure you want to delete this reservation?",
+        "cancel": "Cancel"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Operation completed successfully",
+        "save": "Save",
+        "cancel": "Cancel"
+    },
+    "errors": {
+        "requiredField": "Required field",
+        "invalidEmail": "Invalid email",
+        "passwordTooShort": "Password too short (minimum 8 characters)",
+        "loginFailed": "Invalid email or password",
+        "notAuthenticated": "You must be logged in",
+        "networkError": "Connection error"
+    }
+}
