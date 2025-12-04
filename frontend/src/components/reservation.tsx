@@ -53,7 +53,7 @@ export default function ResCard({ res, ondelete }: ResProps) {
 
             <div className="segment">
                 <h1>{t('reservations.notes')}</h1>
-                <h3>{res.notes}</h3>
+                <h3>{res.notes? res.notes : '-'}</h3>
             </div>
 
             <div className="buttons">

@@ -1,15 +1,31 @@
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 import { useAuth } from "../hook/authHook"
+import { useState } from "react"
+import { downloadMenu } from "../api/menu.api"
 
 
 
 export const Home = () => {
     const { t } = useTranslation()
-    const {isAuthenticated} = useAuth()
+    const { isAuthenticated } = useAuth()
+    const [isDownloading, setIsDownloading] = useState(false)
 
     const renderStars = (count: number) => {
         return '⭐'.repeat(count) + '☆'.repeat(5 - count);
+    }
+
+    const handleDownloadMenu = async () => {
+        setIsDownloading(true)
+        try {
+            const menuUrl = await downloadMenu()
+            window.open(menuUrl, '_blank')
+        } catch (err) {
+            console.error(t('errors.networkError'))
+
+        } finally {
+            setIsDownloading(false)
+        }
     }
     return (
         <div id='Home-Container'>
@@ -18,11 +34,14 @@ export const Home = () => {
                 <h3>{t('home.hero.subtitle')}</h3>
                 <p>{t('home.hero.description')}</p>
                 <div id='section-buttons'>
-                    { isAuthenticated ? (
+
+                    <button type='button' onClick={handleDownloadMenu} disabled={isDownloading}>{isDownloading? t('common.loading') : t('home.hero.download')}</button>
+
+                    {isAuthenticated ? (
                         <Link to='/reservation'>
                             <button type='button'>{t('home.hero.reserve')}</button>
                         </Link>
-                    ):(
+                    ) : (
                         <Link to='/login'>
                             <button type='button'>{t('home.hero.reserve')}</button>
                         </Link>

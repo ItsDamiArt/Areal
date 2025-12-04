@@ -81,7 +81,8 @@
             "location": "location",
             "locationSite": "Old Town",
             "clockL": "11:30AM - 2:30PM",
-            "clockD": "7:00PM - 11:30PM"
+            "clockD": "7:00PM - 11:30PM",
+            "download": "Download menu (PDF)"
         },
         "aside": {
             "tasting": "Tasting menù",
@@ -104,20 +105,20 @@
             }
         },
         "reviews": {
-            "title": "Cosa dicono i nostri ospiti",
-            "subtitle": "Esperienze reali dai nostri clienti",
+            "title": "What Our Guests Say",
+            "subtitle": "Real experiences from our guests",
             "review1": {
-                "text": "Cucina pulita, precisa, senza eccessi. Piatti minimali all'aspetto ma intensi nel sapore. Servizio impeccabile.",
+                "text": "Clean, precise cuisine with no excess. Minimalist-looking dishes with intense flavor. Impeccable service.",
                 "author": "Marco T.",
                 "stars": 5
             },
             "review2": {
-                "text": "Equilibrio perfetto. Il percorso degustazione racconta una filosofia chiara. Ambiente sereno e molto curato.",
+                "text": "Perfect balance. The tasting menu conveys a clear philosophy. A calm, carefully curated atmosphere.",
                 "author": "Elena S.",
                 "stars": 4
             },
             "review3": {
-                "text": "Un ristorante che lavora con misura. Nulla è fuori posto: ingredienti selezionati, tecnica evidente ma non invadente.",
+                "text": "A restaurant that works with restraint. Nothing is out of place: carefully selected ingredients and technique that is evident but never intrusive.",
                 "author": "Andrea P.",
                 "stars": 5
             }

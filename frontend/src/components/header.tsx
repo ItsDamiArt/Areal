@@ -4,7 +4,7 @@ import { useAuth } from "../hook/authHook"
 import { useState } from "react"
 
 export const Header = () => {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
     const { isAuthenticated, user, logout } = useAuth()
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState<string | null>(null)
@@ -21,6 +21,12 @@ export const Header = () => {
         }
     }
 
+    const changeLanguage = (lang: string) => {
+        i18n.changeLanguage(lang)
+        localStorage.setItem('language', lang)  // Salva preferenza
+    }
+
+    const currentLanguage = i18n.language
 
     return (
         <div id='navbar'>
@@ -40,6 +46,24 @@ export const Header = () => {
                 {isAuthenticated && user && (
                     <h4>{t('welcome')} {user.name}</h4>
                 )}
+            </div>
+
+            <div className="language-switcher">
+                <button 
+                    onClick={() => changeLanguage('it')}
+                    className={currentLanguage === 'it' ? 'active' : ''}
+                    aria-label="Italiano"
+                >
+                    IT
+                </button>
+                <span className="divider">|</span>
+                <button 
+                    onClick={() => changeLanguage('en')}
+                    className={currentLanguage === 'en' ? 'active' : ''}
+                    aria-label="English"
+                >
+                    EN
+                </button>
             </div>
 
             {isAuthenticated ? (

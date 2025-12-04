@@ -5,6 +5,7 @@ import { logSession } from './middleware/requiredAuth';
 import { authRoutes } from './routes/user.routes';
 import dotenv from 'dotenv'
 import { ReservationRoutes } from './routes/reservation.routes';
+import { menuRoutes } from './routes/menu.routes';
 
 
 dotenv.config()
@@ -38,5 +39,6 @@ app.use(logSession)
 
 authRoutes(app)
 ReservationRoutes(app)
+menuRoutes(app)
 
 app.listen(port, () => console.log(`server in ascolto sulla porta ${port}`))
