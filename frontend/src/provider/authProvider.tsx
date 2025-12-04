@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from "react"
 import type { AuthProviderProp } from "../types/auth.type"
-import type { typeUser } from "../types/user.types"
+import type { typeExtUser } from "../types/user.types"
 import { AuthContext } from "../context/authContext"
 import { checkAuth, Login, Logout, Register } from "../api/user.api"
 
 
 export const AuthProvider: React.FC<AuthProviderProp> = ({ children }) => {
-    const [user, setUser]= useState<typeUser | null>(null)
+    const [user, setUser]= useState<typeExtUser | null>(null)
     const [isLoading, setIsLoading] = useState(true)
     const isAuthenticated = Boolean(user)
 

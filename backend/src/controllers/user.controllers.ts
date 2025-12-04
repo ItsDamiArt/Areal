@@ -17,6 +17,7 @@ export const Login = async(req:Request, res:Response) => {
         if(User_log !== null){
             req.session.user_id = User_log.user_id
             req.session.email = User_log.email
+            req.session.name=User_log.name
             req.session.save()
 
             console.log('sessione creata')
@@ -68,7 +69,8 @@ export const auth = (req:Request, res:Response)=> {
         authenticated:true,
         user:{
             id: req.session.user_id,
-            email: req.session.email
+            email: req.session.email,
+            name:req.session.name
         }
     })
 }

@@ -38,7 +38,7 @@ export const Header = () => {
 
             <div id='user'>
                 {isAuthenticated && user && (
-                    <h4>{t('welcome')} {user.email}</h4>
+                    <h4>{t('welcome')} {user.name}</h4>
                 )}
             </div>
 

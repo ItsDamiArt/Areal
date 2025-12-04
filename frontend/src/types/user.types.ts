@@ -15,15 +15,20 @@ export const RegisterSchema = z.object({
 
 export const UserSchema = z.object({
     id: z.number(),
-    email: z.string().email(),
+    email: z.email(),
 });
+
+export const UserSchemaType = UserSchema.extend({
+    name:z.string()
+})
 
 export const AuthResponseSchema = z.object({
     authenticated: z.boolean(),
-    user: UserSchema.optional()
+    user: UserSchemaType.optional()
 });
 
 export type typeLogin = z.infer<typeof LoginSchema>
 export type typeRegister = z.infer<typeof RegisterSchema>
 export type typeUser = z.infer<typeof UserSchema>;
+export type typeExtUser = z.infer<typeof UserSchemaType>;
 export type typeAuthResponse = z.infer<typeof AuthResponseSchema>;

@@ -1,10 +1,10 @@
-import type { typeLogin, typeRegister, typeAuthResponse, typeUser } from "../types/user.types";
+import type { typeLogin, typeRegister, typeAuthResponse, typeExtUser } from "../types/user.types";
 import { LoginSchema, RegisterSchema, AuthResponseSchema } from "../types/user.types";
 
 
 const apiUrlAuth = import.meta.env.VITE_API_URL_AUTH
 
-export const Login = async (payload: typeLogin): Promise<typeUser> => {
+export const Login = async (payload: typeLogin): Promise<typeExtUser> => {
     const url = `${apiUrlAuth}/login`
     const validCredentials = LoginSchema.safeParse(payload)
 

@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
-import type { typeUser } from "./user.types";
+import type { typeExtUser } from "./user.types";
 
 export type TypeAuthContext = {
-    user: typeUser | null
+    user: typeExtUser | null
     isAuthenticated: boolean
     isLoading: boolean  // ✅ Aggiungi questa riga
     login: (email: string, password: string) => Promise<void>
