@@ -60,8 +60,10 @@ export const Logout = async (req:Request, res:Response) => {
 
 
 export const auth = (req:Request, res:Response)=> {
+    console.log(' non Autenticato')
     if(!req.session.user_id) return res.status(401).json({authenticated: false})
 
+    console.log('✅ Autenticato')
     res.json({
         authenticated:true,
         user:{

@@ -15,7 +15,7 @@ export const RegisterSchema = z.object({
 
 export const UserSchema = z.object({
     id: z.number(),
-    email: z.string().email()
+    email: z.string().email(),
 });
 
 export const AuthResponseSchema = z.object({

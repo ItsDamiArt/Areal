@@ -7,9 +7,12 @@
         "reservations": "Reservations",
         "login": "Login",
         "register": "Sign Up",
-        "logout": "Logout"
+        "logout": "Logout",
+        "logo": "Contemporary cuisine",
+        "welcome": "Welcome back"
     },
     "auth": {
+        "welcomeReg": "Welcome!",
         "loginTitle": "Login to your account",
         "registerTitle": "Create an account",
         "email": "Email",
@@ -19,28 +22,30 @@
         "loginButton": "Login",
         "registerButton": "Sign Up",
         "logoutButton": "Logout",
-        "alreadyHaveAccount": "Already have an account?",
-        "dontHaveAccount": "Don't have an account?",
-        "loginHere": "Login here",
-        "registerHere": "Sign up here"
+        "alreadyHaveAccount": "Already have an account? Login here!",
+        "dontHaveAccount": "Don't have an account? Sign up here!"
     },
     "reservations": {
         "title": "My Reservations",
         "noReservations": "No reservations found",
         "createNew": "New Reservation",
         "date": "Date",
+        "time": "Time",
         "guests": "Guests",
         "notes": "Notes",
         "delete": "Delete",
         "confirmDelete": "Are you sure you want to delete this reservation?",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "deleteRes": "Delete Reservation?",
+        "subtitle": "Choose the date and time for your reservation, and select the number of guests. Please write anything you need to communicate to us in the ‘notes’ section."
     },
     "common": {
         "loading": "Loading...",
         "error": "Error",
         "success": "Operation completed successfully",
         "save": "Save",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "delete": "Delete"
     },
     "errors": {
         "requiredField": "Required field",
@@ -48,6 +53,173 @@
         "passwordTooShort": "Password too short (minimum 8 characters)",
         "loginFailed": "Invalid email or password",
         "notAuthenticated": "You must be logged in",
-        "networkError": "Connection error"
+        "networkError": "Connection error",
+        "deleteErr": "Error during deleting",
+        "logoutErr": "Error during logout",
+        "loginErr": "Error during login",
+        "regErr": "Error during registration",
+        "loadErr": "Error during loading data",
+        "createErr": "Error during creating process",
+        "notFound": "Seems you'be been redirect into somewhere wrong, use the link below to navigate into HomePage"
+    },
+    "placeholder": {
+        "emailPh": "Enter your email here...",
+        "passPh": "Enter your password here...",
+        "namePh": "Enter your name here...",
+        "surnamePh": "Enter your surname here...",
+        "notesPh": "Allergies, Demands, Occasions"
+    },
+    "home": {
+        "hero": {
+            "title": "Aréal",
+            "subtitle": "Contemporary Cuisine",
+            "description": "A gastronomic experience built on origin, precision, and balance",
+            "cta": "Discover Our Menu",
+            "reserve": "Reserve a table",
+            "service": "Service",
+            "cuisine": "Cuisine",
+            "location": "location",
+            "locationSite": "Old Town",
+            "clockL": "11:30AM - 2:30PM",
+            "clockD": "7:00PM - 11:30PM"
+        },
+        "aside": {
+            "tasting": "Tasting menù",
+            "text": "We offers contemporary cuisine that combines refinement, transparency, and sustainability through a menù that showcases selected ingredients and precise techniques.",
+            "dishes": "4 courses - Wine selection included - €90"
+        },
+        "philosophy": {
+            "title": "Our Philosophy",
+            "origin": {
+                "title": "Origin",
+                "text": "Every dish starts from a traceable and seasonal ingredient. Not just provenance, but context: climate, soil, processing. Ingredients are sourced from small agricultural and fishing operations working on quality and sustainability."
+            },
+            "precision": {
+                "title": "Precision",
+                "text": "Technique is not a show, but a tool. Delicate cooking, clean reductions, light fermentations, and measured marinades define a recognizable style: clear, rigorous, uncluttered."
+            },
+            "balance": {
+                "title": "Balance",
+                "text": "Each composition is built on a few gestures, calibrated between acidity, sweetness, saltiness, and texture. The goal is to offer a readable yet profound taste, without superfluous noise."
+            }
+        },
+        "reviews": {
+            "title": "Cosa dicono i nostri ospiti",
+            "subtitle": "Esperienze reali dai nostri clienti",
+            "review1": {
+                "text": "Cucina pulita, precisa, senza eccessi. Piatti minimali all'aspetto ma intensi nel sapore. Servizio impeccabile.",
+                "author": "Marco T.",
+                "stars": 5
+            },
+            "review2": {
+                "text": "Equilibrio perfetto. Il percorso degustazione racconta una filosofia chiara. Ambiente sereno e molto curato.",
+                "author": "Elena S.",
+                "stars": 4
+            },
+            "review3": {
+                "text": "Un ristorante che lavora con misura. Nulla è fuori posto: ingredienti selezionati, tecnica evidente ma non invadente.",
+                "author": "Andrea P.",
+                "stars": 5
+            }
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "intro": "\"Aréal\" was born as a contemporary cuisine project inspired by the concept of essential territory: few elements, rigorously chosen, treated with techniques that respect their structure and identity.",
+        "space": {
+            "title": "The Space",
+            "text": "The restaurant is located in a bright, linear architectural space, designed around natural materials — light stone, wood, and brushed steel — with a deliberately quiet dining room, built to place the dish at the center of the experience."
+        },
+        "approach": {
+            "title": "Gastronomic Approach",
+            "text": "Our gastronomic approach is based on three pillars:",
+            "pillars": "Origin, Precision, Balance"
+        }
+    },
+    "menu": {
+        "title": "Our Menu",
+        "subtitle": "A selection of dishes designed to enhance Italian flavors.",
+        "starters": {
+            "title": "Starters",
+            "items": {
+                "cauliflower": {
+                    "name": "Roasted Cauliflower, Almond Cream, Pine Oil",
+                    "description": "Selection of local products with homemade preserves."
+                },
+                "amberjack": {
+                    "name": "Citrus-Marinated Amberjack, Fermented Cucumber & Dill",
+                    "description": "Classic seasoning, organic egg yolk and crispy cold cuts."
+                },
+                "egg": {
+                    "name": "Soft Egg, Jerusalem Artichoke & Toasted Mushroom Broth",
+                    "description": "Potato cream, smoked ricotta and rosemary oil."
+                }
+            }
+        },
+        "firstCourses": {
+            "title": "First Courses",
+            "items": {
+                "risotto": {
+                    "name": "Risotto with Candied Lemon & Wild Thyme",
+                    "description": "Clarified butter, black truffle and aged Parmigiano Reggiano."
+                },
+                "tortello": {
+                    "name": "Goat Cheese Tortello, Wild Herbs & Hazelnut Butter",
+                    "description": "Carnaroli rice, meat broth and saffron reduction."
+                },
+                "spaghetti": {
+                    "name": "Herb Spaghetti, Light Colatura & Fermented Chili",
+                    "description": "Clams, mussels, squid and cherry tomatoes."
+                }
+            }
+        },
+        "mainCourses": {
+            "title": "Main Courses",
+            "items": {
+                "turbot": {
+                    "name": "Steamed Turbot, Champagne Sauce & Crispy Fennel",
+                    "description": "Red wine reduction, roasted potatoes and seasonal vegetables."
+                },
+                "duck": {
+                    "name": "Duck Breast, Pomegranate Reduction & Roasted Carrot",
+                    "description": "Citrus fruits, fennel and Taggiasca olives."
+                },
+                "celeriac": {
+                    "name": "Salt-Crusted Celeriac, Parmesan Foam & Walnuts",
+                    "description": "Traditional recipe with tomato, olives and capers."
+                }
+            }
+        },
+        "desserts": {
+            "title": "Desserts & Wines & Selection",
+            "items": {
+                "chocolate": {
+                    "name": "Dark Chocolate Mousse, Delicate EVOO & Cervia Salt"
+                },
+                "pear": {
+                    "name": "Pear Cooked in Light Honey, Vanilla Cream & Dried Flowers"
+                },
+                "semifreddo": {
+                    "name": "Citrus Semifreddo with Almond Crumble"
+                }
+            }
+        },
+        "wines": {
+            "title": "Wine Selection",
+            "price": "from €5/glass",
+            "description": "Wine list with Italian and international labels, available by the glass and bottle."
+        }
+    },
+    "privateArea": {
+        "title": "Private Area",
+        "welcome": "Welcome to your private area",
+        "offers": {
+            "title": "Essence Tasting Journey",
+            "text": "A five-course itinerary that reflects our seasonal cuisine, crafted with precision and balance.",
+            "title2": "Sensory Wine Experience",
+            "text2": "A guided selection of curated wines, paired with small bites designed to enhance their character.",
+            "title3": "Dedicated Evening",
+            "text3": "A welcome glass, a reserved table selection, and a dessert created exclusively for the occasion."
+        }
     }
 }

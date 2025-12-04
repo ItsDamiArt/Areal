@@ -6,6 +6,10 @@ export const createReservation = z.object({
     notes: z.string().nullable()
 })
 
+export const CreateReservationExtend = createReservation.extend({
+    res_id:z.number()
+})
+
 
 
 export const ReservationSchema = z.object({
@@ -18,5 +22,5 @@ export const ReservationSchema = z.object({
 
 
 export type typeCreateReservation = z.infer<typeof createReservation>
-
+export type typeCreateReservationExtend = z.infer<typeof CreateReservationExtend>
 export type typeReservationSchema = z.infer<typeof ReservationSchema>

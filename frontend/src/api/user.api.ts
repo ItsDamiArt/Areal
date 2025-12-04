@@ -1,5 +1,5 @@
 import type { typeLogin, typeRegister, typeAuthResponse, typeUser } from "../types/user.types";
-import { LoginSchema, RegisterSchema, UserSchema, AuthResponseSchema } from "../types/user.types";
+import { LoginSchema, RegisterSchema, AuthResponseSchema } from "../types/user.types";
 
 
 const apiUrlAuth = import.meta.env.VITE_API_URL_AUTH
@@ -22,12 +22,17 @@ export const Login = async (payload: typeLogin): Promise<typeUser> => {
 
     if (!response.ok) throw new Error(`email o password errati`)
 
-    const data = await response.json()
-    const validUser = UserSchema.safeParse(data.user)
+    const message = await response.text()
     
-    if (!validUser.success) throw new Error('Formato risposta non valido')
+    console.log(message)
+    const authData = await checkAuth()
+
+    if (!authData.authenticated || !authData.user) {
+        throw new Error('Login fallito: sessione non creata')
+    }
     
-    return validUser.data
+    return authData.user
+    
 }
 
 
@@ -72,6 +77,7 @@ export const Logout = async (): Promise<void> => {
 }
 
 export const checkAuth = async(): Promise<typeAuthResponse> => {
+    try {
     const url =`${apiUrlAuth}/check`
 
     const response = await fetch(url,{
@@ -94,4 +100,8 @@ export const checkAuth = async(): Promise<typeAuthResponse> => {
     if(!validResponse.success) throw new Error('formato risposta non valido')
 
         return validResponse.data
+}catch(err){
+    console.error(err)
+     return { authenticated: false }
+}
 }

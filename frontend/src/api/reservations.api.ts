@@ -11,6 +11,7 @@ export const getRes = async (): Promise<typeReservationSchema[]> => {
 
     if (response.status === 401) {
         throw new Error('Non autenticato')
+        
     }
 
     if (!response.ok) throw new Error(`HTTP ${response.status}`)

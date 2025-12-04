@@ -1,15 +1,18 @@
 {
     "nav": {
         "home": "Home",
-        "about": "Chi siamo",
-        "menu": "Menù",
-        "profile": "Area riservata",
+        "about": "Chi Siamo",
+        "menu": "Menu",
+        "profile": "Area Riservata",
         "reservations": "Prenotazioni",
         "login": "Accedi",
         "register": "Registrati",
-        "logout": "Esci"
+        "logout": "Esci",
+        "logo": "Cucina contemporanea",
+        "welcome": "Bentornato"
     },
     "auth": {
+        "welcomeReg": "Benvenuto!",
         "loginTitle": "Accedi al tuo account",
         "registerTitle": "Crea un account",
         "email": "Email",
@@ -19,35 +22,204 @@
         "loginButton": "Accedi",
         "registerButton": "Registrati",
         "logoutButton": "Esci",
-        "alreadyHaveAccount": "Hai già un account?",
-        "dontHaveAccount": "Non hai un account?",
-        "loginHere": "Accedi qui",
-        "registerHere": "Registrati qui"
+        "alreadyHaveAccount": "Hai già un account? Accedi qui!",
+        "dontHaveAccount": "Non hai un account? Registrati qui!"
     },
     "reservations": {
-        "title": "Le Mie Prenotazioni",
+        "title": "Le mie prenotazioni",
         "noReservations": "Nessuna prenotazione trovata",
         "createNew": "Nuova Prenotazione",
         "date": "Data",
+        "time": "Orario",
         "guests": "Ospiti",
         "notes": "Note",
         "delete": "Elimina",
         "confirmDelete": "Sei sicuro di voler eliminare questa prenotazione?",
-        "cancel": "Annulla"
+        "cancel": "Annulla",
+        "deleteRes": "Eliminare la prenotazione?",
+        "subtitle": "Scegli la data e l’orario per la tua prenotazione e indica il numero di ospiti. Inserisci nella sezione ‘note’ qualsiasi informazione tu desideri comunicarci."
     },
     "common": {
         "loading": "Caricamento...",
         "error": "Errore",
         "success": "Operazione completata con successo",
         "save": "Salva",
-        "cancel": "Annulla"
+        "cancel": "Annulla",
+        "delete": "Elimina"
     },
     "errors": {
         "requiredField": "Campo obbligatorio",
         "invalidEmail": "Email non valida",
         "passwordTooShort": "Password troppo corta (minimo 8 caratteri)",
-        "loginFailed": "Email o password errati",
-        "notAuthenticated": "Devi effettuare l'accesso",
-        "networkError": "Errore di connessione"
+        "loginFailed": "Email o password non corretti",
+        "notAuthenticated": "Devi effettuare l’accesso",
+        "networkError": "Errore di connessione",
+        "deleteErr": "Errore durante l’eliminazione",
+        "logoutErr": "Errore durante il logout",
+        "loginErr": "Errore durante l’accesso",
+        "regErr": "Errore durante la registrazione",
+        "loadErr": "Errore durante il caricamento dei dati",
+        "createErr": "Errore durante la creazione",
+        "notFound": "Sembra che tu sia stato reindirizzato in un punto errato. Usa il link qui sotto per tornare alla HomePage."
+    },
+    "placeholder": {
+        "emailPh": "Inserisci qui la tua email...",
+        "passPh": "Inserisci qui la tua password...",
+        "namePh": "Inserisci qui il tuo nome...",
+        "surnamePh": "Inserisci qui il tuo cognome...",
+        "notesPh": "Allergie, richieste, occasioni"
+    },
+    "home": {
+        "hero": {
+            "title": "Aréal",
+            "subtitle": "Cucina Contemporanea",
+            "description": "Un’esperienza gastronomica costruita su origine, precisione ed equilibrio",
+            "cta": "Scopri il nostro menu",
+            "reserve": "Prenota un tavolo",
+            "service": "Servizio",
+            "cuisine": "Cucina",
+            "location": "Località",
+            "locationSite": "Centro Storico",
+            "clockL": "11:30 - 14:30",
+            "clockD": "19:00 - 23:30"
+        },
+        "aside": {
+            "tasting": "Menù degustazione",
+            "text": "Offriamo una cucina contemporanea che unisce raffinatezza, trasparenza e sostenibilità attraverso un menù che valorizza ingredienti selezionati e tecniche precise.",
+            "dishes": "4 portate - Selezione vini inclusa - €90"
+        },
+        "philosophy": {
+            "title": "La nostra Filosofia",
+            "origin": {
+                "title": "Origine",
+                "text": "Ogni piatto nasce da un ingrediente tracciabile e stagionale. Non solo provenienza, ma contesto: clima, suolo, lavorazione. Gli ingredienti provengono da piccole realtà agricole e ittiche che operano con attenzione alla qualità e alla sostenibilità."
+            },
+            "precision": {
+                "title": "Precisione",
+                "text": "La tecnica non è spettacolo, ma strumento. Cotture delicate, riduzioni pulite, fermentazioni leggere e marinature misurate definiscono uno stile riconoscibile: chiaro, rigoroso ed essenziale."
+            },
+            "balance": {
+                "title": "Equilibrio",
+                "text": "Ogni composizione nasce da pochi gesti calibrati tra acidità, dolcezza, sapidità e texture. L’obiettivo è offrire un gusto leggibile ma profondo, senza eccessi superflui."
+            }
+        },
+        "reviews": {
+            "title": "Cosa dicono i nostri ospiti",
+            "subtitle": "Esperienze reali dai nostri clienti",
+            "review1": {
+                "text": "Cucina pulita, precisa, senza eccessi. Piatti minimali all’aspetto ma intensi nel sapore. Servizio impeccabile.",
+                "author": "Marco T.",
+                "stars": 5
+            },
+            "review2": {
+                "text": "Equilibrio perfetto. Il percorso degustazione racconta una filosofia chiara. Ambiente sereno e molto curato.",
+                "author": "Elena S.",
+                "stars": 4
+            },
+            "review3": {
+                "text": "Un ristorante che lavora con misura. Nulla è fuori posto: ingredienti selezionati, tecnica evidente ma non invadente.",
+                "author": "Andrea P.",
+                "stars": 5
+            }
+        }
+    },
+    "about": {
+        "title": "Chi Siamo",
+        "intro": "\"Aréal\" nasce come progetto di cucina contemporanea ispirato al concetto di territorio essenziale: pochi elementi, scelti con rigore, trattati con tecniche che ne rispettano struttura e identità.",
+        "space": {
+            "title": "Lo Spazio",
+            "text": "Il ristorante si trova in uno spazio architettonico luminoso e lineare, progettato con materiali naturali — pietra chiara, legno e acciaio satinato — con una sala volutamente silenziosa, pensata per mettere il piatto al centro dell’esperienza."
+        },
+        "approach": {
+            "title": "Approccio Gastronomico",
+            "text": "Il nostro approccio gastronomico si basa su tre pilastri:",
+            "pillars": "Origine, Precisione, Equilibrio"
+        }
+    },
+    "menu": {
+        "title": "Il Nostro Menu",
+        "subtitle": "Una selezione di piatti pensati per valorizzare i sapori italiani.",
+        "starters": {
+            "title": "Antipasti",
+            "items": {
+                "cauliflower": {
+                    "name": "Cavolfiore Arrosto, Crema di Mandorla, Olio al Pino",
+                    "description": "Selezione di prodotti locali con conserve fatte in casa."
+                },
+                "amberjack": {
+                    "name": "Ricciola Marinata agli Agrumi, Cetriolo Fermentato & Aneto",
+                    "description": "Condimento classico, tuorlo bio e salumi croccanti."
+                },
+                "egg": {
+                    "name": "Uovo Morbido, Topinambur & Brodo di Funghi Tostati",
+                    "description": "Crema di patate, ricotta affumicata e olio al rosmarino."
+                }
+            }
+        },
+        "firstCourses": {
+            "title": "Primi Piatti",
+            "items": {
+                "risotto": {
+                    "name": "Risotto al Limone Candito & Timo Selvatico",
+                    "description": "Burro chiarificato, tartufo nero e Parmigiano Reggiano stagionato."
+                },
+                "tortello": {
+                    "name": "Tortello al Caprino, Erbe Selvatiche & Burro Nocciola",
+                    "description": "Riso Carnaroli, brodo di carne e riduzione allo zafferano."
+                },
+                "spaghetti": {
+                    "name": "Spaghetti alle Erbe, Colatura Leggera & Peperoncino Fermentato",
+                    "description": "Vongole, cozze, calamari e pomodorini."
+                }
+            }
+        },
+        "mainCourses": {
+            "title": "Secondi Piatti",
+            "items": {
+                "turbot": {
+                    "name": "Rombo al Vapore, Salsa allo Champagne & Finocchio Croccante",
+                    "description": "Riduzione al vino rosso, patate arrosto e verdure di stagione."
+                },
+                "duck": {
+                    "name": "Petto d’Anatra, Riduzione al Melograno & Carota Arrosto",
+                    "description": "Agrumi, finocchio e olive Taggiasche."
+                },
+                "celeriac": {
+                    "name": "Sedano Rapa in Crosta di Sale, Spuma al Parmigiano & Noci",
+                    "description": "Ricetta tradizionale con pomodoro, olive e capperi."
+                }
+            }
+        },
+        "desserts": {
+            "title": "Dessert & Selezione Vini",
+            "items": {
+                "chocolate": {
+                    "name": "Mousse al Cioccolato Fondente, Olio EVO Delicato & Sale di Cervia"
+                },
+                "pear": {
+                    "name": "Pera al Miele Leggero, Crema alla Vaniglia & Fiori Secchi"
+                },
+                "semifreddo": {
+                    "name": "Semifreddo agli Agrumi con Crumble di Mandorle"
+                }
+            }
+        },
+        "wines": {
+            "title": "Selezione Vini",
+            "price": "da €5/calice",
+            "description": "Carta dei vini con etichette italiane e internazionali, disponibili al calice e in bottiglia."
+        }
+    },
+    "privateArea": {
+        "title": "Area Riservata",
+        "welcome": "Benvenuto nella tua area riservata",
+        "offers": {
+            "title": "Percorso Essenza",
+            "text": "Un itinerario di cinque portate che riflette la nostra cucina stagionale, realizzato con precisione ed equilibrio.",
+            "title2": "Esperienza Sensoriale del Vino",
+            "text2": "Una selezione guidata di vini curati, accompagnata da piccoli assaggi pensati per esaltarne il carattere.",
+            "title3": "Serata Dedicata",
+            "text3": "Un calice di benvenuto, una scelta riservata del tavolo e un dessert creato esclusivamente per l’occasione."
+        }
     }
 }
