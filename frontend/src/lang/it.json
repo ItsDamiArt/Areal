@@ -60,7 +60,7 @@
         "regErr": "Errore durante la registrazione",
         "loadErr": "Errore durante il caricamento dei dati",
         "createErr": "Errore durante la creazione",
-        "notFound": "Sembra che tu sia stato reindirizzato in un punto errato. Usa il link qui sotto per tornare alla HomePage."
+        "notFound": "Sembra che tu sia stato reindirizzato in un link errato. Usa il link qui sotto per tornare alla HomePage."
     },
     "placeholder": {
         "emailPh": "Inserisci qui la tua email...",
