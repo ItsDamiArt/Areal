@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 import { useAuth } from "../hook/authHook"
 import { useState } from "react"
+import './header.css'
 
 export const Header = () => {
     const { t, i18n } = useTranslation()
@@ -30,11 +31,10 @@ export const Header = () => {
 
     return (
         <div id='navbar'>
-            <div id='logo'>
+            <div id='logo' className='item'>
                 <h1>Aréal</h1>
-                <h4>{t('nav.logo')}</h4>
             </div>
-            <nav>
+            <nav className='item'>
                 <Link to='/'>{t('nav.home')}</Link>
                 <Link to='/about'>{t('nav.about')}</Link>
                 <Link to='/menu'>{t('nav.menu')}</Link>
@@ -42,13 +42,13 @@ export const Header = () => {
                 <Link to='/reservation'>{t('nav.reservations')}</Link>
             </nav>
 
-            <div id='user'>
+            <div id='user' className='item'>
                 {isAuthenticated && user && (
-                    <h4>{t('welcome')} {user.name}</h4>
+                    <h4>{t('nav.welcome')} {user.name}</h4>
                 )}
             </div>
 
-            <div className="language-switcher">
+            <div className="language-switcher item">
                 <button 
                     onClick={() => changeLanguage('it')}
                     className={currentLanguage === 'it' ? 'active' : ''}
@@ -56,7 +56,6 @@ export const Header = () => {
                 >
                     IT
                 </button>
-                <span className="divider">|</span>
                 <button 
                     onClick={() => changeLanguage('en')}
                     className={currentLanguage === 'en' ? 'active' : ''}
@@ -65,7 +64,8 @@ export const Header = () => {
                     EN
                 </button>
             </div>
-
+            
+            <div className='item' id='nav-buttons'>
             {isAuthenticated ? (
                 <button onClick={handleClick} disabled={isLoading}>{isLoading? t('common.loading'): t('nav.logout')}</button>
             ) : (
@@ -74,6 +74,8 @@ export const Header = () => {
                 </Link>
             )
             }
+
+            </div>
 
             {error && <p className="error">{error}</p>}
         </div>

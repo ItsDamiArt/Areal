@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --navy: #2f4156;
+    --navy-trans: #2f4156b5;
+    --teal: #567c8d;
+    --beige: #f5efeb;
+    --sky-blue: #c8d9e6;
+    --white: #ffffff;
+    --errors: rgb(233, 107, 107);
+    --success: rgb(111, 237, 180);
+    --warning: rgb(241, 245, 136);
+    --logo-font: "Passions Conflict", cursive;
+    --subtitle-font: "Bodoni Moda", serif;
+    --title-font: "Bodoni Moda SC", serif;
+    --text-font: "Montserrat", sans-serif;
+
+}
+
+#navbar h1,#navbar a, #navbar h4{
+     color: var(--beige);
+}
+
+#navbar a:hover{
+    color: var(--success);
+    
+}
+
+*{
+    margin:0;
+    font-size:1em;
+}
+
+#navbar{
+    display:flex;
+    flex-direction:row;
+    margin:1em;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--navy-trans);
+    backdrop-filter: blur(5px);
+    border-radius:20px;
+    padding:0.2em;
+    position:sticky;
+}
+
+
+
+.item{
+    flex-grow: 1;
+}
+
+#logo h1{
+    font-family: var(--logo-font);
+    font-size:3.5em;
+    font-weight:400;
+}
+
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: var(--text-font);
+    
+}
+
+#user, .language-switcher, #nav-buttons, #logo{
+     display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+#nav-buttons button, .language-switcher button {
+    border: 1px solid var(--beige);
+    background-color:transparent;
+    color: var(--beige);
+    border-radius:60px;
+    padding:0.6em 0.9em;
+}
+
+.language-switcher{
+    gap:1em;
+}
+
+.language-switcher button:hover, #nav-buttons button:hover{
+    background-color:var(--navy);
+}
+
+
+

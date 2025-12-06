@@ -114,7 +114,7 @@ export const Reservations = () => {
                 <h3>{t('reservations.subtitle')}</h3>
             </div>
 
-            <div id='Res-form'>
+            <div id='Res-form-container'>
                 <form onSubmit={handleCreate}>
                     <div className='form-group'>
                         <label>{t('reservations.date')}</label>
@@ -133,7 +133,7 @@ export const Reservations = () => {
 
                     <div className='form-group'>
                         <label>{t('reservations.notes')}</label>
-                        <textarea value={notes} placeholder={t('placeholder.notesPh')} onChange={(e) => setNotes(e.target.value)} disabled={isLoading} />
+                        <textarea value={notes} placeholder={t('placeholder.notesPh')} onChange={(e) => setNotes(e.target.value)} disabled={isLoading} rows={5} />
                     </div>
 
                     <button type="submit" disabled={isLoading}>

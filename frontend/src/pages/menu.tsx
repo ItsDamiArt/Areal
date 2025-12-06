@@ -23,27 +23,31 @@ export const Menu = () => {
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.starters.items.cauliflower.name')}</h3>
-                                <span className="price">€14</span>
+                                <p className="price">€14</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.starters.items.cauliflower.description')}
                             </p>
                         </div>
 
+                        <span></span>
+
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.starters.items.amberjack.name')}</h3>
-                                <span className="price">€16</span>
+                                <p className="price">€16</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.starters.items.amberjack.description')}
                             </p>
                         </div>
 
+                        <span></span>
+
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.starters.items.egg.name')}</h3>
-                                <span className="price">€15</span>
+                                <p className="price">€15</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.starters.items.egg.description')}
@@ -51,34 +55,39 @@ export const Menu = () => {
                         </div>
                     </section>
 
-                    
+                </div>
+
+                 <div className="menu-column">
+
                     <section className="menu-section">
                         <h2>{t('menu.mainCourses.title')}</h2>
                         
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.mainCourses.items.turbot.name')}</h3>
-                                <span className="price">€26</span>
+                                <p className="price">€26</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.mainCourses.items.turbot.description')}
                             </p>
                         </div>
 
+                        <span></span>
+
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.mainCourses.items.duck.name')}</h3>
-                                <span className="price">€24</span>
+                                <p className="price">€24</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.mainCourses.items.duck.description')}
                             </p>
                         </div>
-
+                        <span></span>
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.mainCourses.items.celeriac.name')}</h3>
-                                <span className="price">€21</span>
+                                <p className="price">€21</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.mainCourses.items.celeriac.description')}
@@ -97,27 +106,31 @@ export const Menu = () => {
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.firstCourses.items.risotto.name')}</h3>
-                                <span className="price">€18</span>
+                                <p className="price">€18</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.firstCourses.items.risotto.description')}
                             </p>
                         </div>
 
+                        <span></span>
+
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.firstCourses.items.tortello.name')}</h3>
-                                <span className="price">€17</span>
+                                <p className="price">€17</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.firstCourses.items.tortello.description')}
                             </p>
                         </div>
 
+                        <span></span>
+
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.firstCourses.items.spaghetti.name')}</h3>
-                                <span className="price">€16</span>
+                                <p className="price">€16</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.firstCourses.items.spaghetti.description')}
@@ -125,28 +138,33 @@ export const Menu = () => {
                         </div>
                     </section>
 
-                   
+                </div>
+                 <div className="menu-column"> 
                     <section className="menu-section">
                         <h2>{t('menu.desserts.title')}</h2>
                         
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.desserts.items.chocolate.name')}</h3>
-                                <span className="price">€8</span>
+                                <p className="price">€8</p>
                             </div>
                         </div>
+
+                        <span></span>
 
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.desserts.items.pear.name')}</h3>
-                                <span className="price">€8</span>
+                                <p className="price">€8</p>
                             </div>
                         </div>
+
+                        <span></span>
 
                         <div className="dish">
                             <div className="dish-header">
                                 <h3>{t('menu.desserts.items.semifreddo.name')}</h3>
-                                <span className="price">€8</span>
+                                <p className="price">€8</p>
                             </div>
                         </div>
 
@@ -154,7 +172,7 @@ export const Menu = () => {
                         <div className="dish wine-selection">
                             <div className="dish-header">
                                 <h3>{t('menu.wines.title')}</h3>
-                                <span className="price">{t('menu.wines.price')}</span>
+                                <p className="price">{t('menu.wines.price')}</p>
                             </div>
                             <p className="dish-description">
                                 {t('menu.wines.description')}

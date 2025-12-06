@@ -46,12 +46,12 @@ export default function ResCard({ res, ondelete }: ResProps) {
                 <h3>{time}</h3>
             </div>
 
-            <div className="segment">
+            <div className="segment guests">
                 <h1>{t('reservations.guests')}</h1>
                 <h3>{res.guests}</h3>
             </div>
 
-            <div className="segment">
+            <div className="segment notes">
                 <h1>{t('reservations.notes')}</h1>
                 <h3>{res.notes? res.notes : '-'}</h3>
             </div>

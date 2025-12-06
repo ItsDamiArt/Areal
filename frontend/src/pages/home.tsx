@@ -30,12 +30,14 @@ export const Home = () => {
     return (
         <div id='Home-Container'>
             <section>
-                <h1>{t('home.hero.title')}</h1>
-                <h3>{t('home.hero.subtitle')}</h3>
+                <div id='sezione'>
+                    <h1>{t('home.hero.title')}</h1>
+                    <h3>{t('home.hero.subtitle')}</h3>
+                </div>
                 <p>{t('home.hero.description')}</p>
                 <div id='section-buttons'>
 
-                    <button type='button' onClick={handleDownloadMenu} disabled={isDownloading}>{isDownloading? t('common.loading') : t('home.hero.download')}</button>
+                    <button type='button' onClick={handleDownloadMenu} disabled={isDownloading}>{isDownloading ? t('common.loading') : t('home.hero.download')}</button>
 
                     {isAuthenticated ? (
                         <Link to='/reservation'>
@@ -70,9 +72,10 @@ export const Home = () => {
 
             <aside>
                 <div id="Aside-container">
-                    <h1>{t('home.aside.tasting')}</h1>
-                    <p>{t('home.aside.text')}</p>
-
+                    <div>
+                        <h1>{t('home.aside.tasting')}</h1>
+                        <p>{t('home.aside.text')}</p>
+                    </div>
                     <div id="Aside-info">
                         <p>{t('home.aside.dishes')}</p>
                     </div>
@@ -80,9 +83,10 @@ export const Home = () => {
             </aside>
 
             <section id="reviews-section">
-                <h2>{t('home.reviews.title')}</h2>
-                <p className="reviews-subtitle">{t('home.reviews.subtitle')}</p>
-
+                <div id='rev-title'>
+                    <h1>{t('home.reviews.title')}</h1>
+                    <p>{t('home.reviews.subtitle')}</p>
+                </div>
                 <div className="reviews-grid">
                     {/* Recensione 1 */}
                     <div className="review-card">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { typeCreateReservationExtend } from "../types/reservations.types";
 import { useTranslation } from "react-i18next";
+import './deleteModal.css'
 
 
 type DeleteProps = {
@@ -33,17 +34,19 @@ export default function DeleteRes({ res, onDelete, onClose }: DeleteProps) {
 
     return (
         <div id="container-modal">
-            <h1>{t('common.deleteRes')}</h1>
+            <div id='modale'>
+            <h1>{t('reservations.deleteRes')}</h1>
             <form onSubmit={handleClick}>
                 <div className="confirm">
                     <h4>{t('reservations.confirmDelete')}</h4>
                 </div>
-                <div className="buttons">
+                <div id="buttons">
                     <button type="button" onClick={onClose} disabled={isLoading}>{t('common.cancel')}</button>
                     <button type="submit" disabled={isLoading}>{isLoading? t('common.loading') : t('common.delete')}</button>
                 </div>
                 {error && <p className="error">{error}</p>}
             </form>
+            </div>
 
 
         </div>

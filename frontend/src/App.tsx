@@ -11,7 +11,7 @@ import { Reservations } from './pages/reservationsPage'
 import LoginForm from './pages/login'
 import RegisterForm from './pages/register'
 import { NotFound } from './pages/notFound'
-
+import './pages/pages.css'
 function App() {
   return (
 
