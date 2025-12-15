@@ -3,6 +3,9 @@ import type { typeCreateReservation, typeReservationSchema } from "../types/rese
 import z from "zod"
 
 const apiUrlRes = import.meta.env.VITE_API_URL_RES
+
+
+
 export const getRes = async (): Promise<typeReservationSchema[]> => {
     const url = `${apiUrlRes}/getreservation`
     const response = await fetch(url, {
