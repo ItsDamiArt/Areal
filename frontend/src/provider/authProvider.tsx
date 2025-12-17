@@ -17,9 +17,9 @@ export const AuthProvider: React.FC<AuthProviderProp> = ({ children }) => {
 
             if(data.authenticated && data.user) {
                 setUser(data.user)
-            }else(
+            }else{
                 setUser(null)
-            )
+            }
         } catch (err) {
             console.error('Errore checkAuthentication', err)
             setUser(null)
