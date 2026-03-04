@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import type { typeCreateReservationExtend } from "../types/reservations.types";
-import i18n from "../i18n";
+import i18n from "../lang/i18n";
 
 type ResProps = {
     res: typeCreateReservationExtend;
