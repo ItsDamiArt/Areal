@@ -44,6 +44,16 @@ export const Reservations = () => {
         fetchReservations()
     }, [])
 
+    const isValidReservationTime = (timeStr: string): boolean => {
+        const [hours, minutes] = timeStr.split(':').map(Number)
+        const total = hours * 60 + minutes
+        const lunchStart = 11 * 60 + 30  // 11:30
+        const lunchEnd = 14 * 60 + 30    // 14:30
+        const dinnerStart = 19 * 60      // 19:00
+        const dinnerEnd = 23 * 60 + 30   // 23:30
+        return (total >= lunchStart && total <= lunchEnd) || (total >= dinnerStart && total <= dinnerEnd)
+    }
+
     const handleCreate = async (e: React.FormEvent) => {
         e.preventDefault()
         setError(null)
@@ -51,6 +61,11 @@ export const Reservations = () => {
 
         if (!date || !time) {
             setError(t('errors.requiredField'))
+            return
+        }
+
+        if (!isValidReservationTime(time)) {
+            setError(t('errors.invalidTime'))
             return
         }
 

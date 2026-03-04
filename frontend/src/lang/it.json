@@ -60,6 +60,7 @@
         "regErr": "Errore durante la registrazione",
         "loadErr": "Errore durante il caricamento dei dati",
         "createErr": "Errore durante la creazione",
+        "invalidTime": "L'orario selezionato è fuori dai nostri orari di apertura: 11:30–14:30 o 19:00–23:30",
         "notFound": "Sembra che tu sia stato reindirizzato in un link errato. Usa il link qui sotto per tornare alla HomePage."
     },
     "placeholder": {

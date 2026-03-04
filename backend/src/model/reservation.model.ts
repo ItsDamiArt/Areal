@@ -1,8 +1,21 @@
 import connection from "../config/db.config";
 import z from "zod";
 
+const isValidReservationTime = (date: Date): boolean => {
+    const hours = date.getHours()
+    const minutes = date.getMinutes()
+    const total = hours * 60 + minutes
+    const lunchStart = 11 * 60 + 30  // 11:30
+    const lunchEnd = 14 * 60 + 30    // 14:30
+    const dinnerStart = 19 * 60      // 19:00
+    const dinnerEnd = 23 * 60 + 30   // 23:30
+    return (total >= lunchStart && total <= lunchEnd) || (total >= dinnerStart && total <= dinnerEnd)
+}
+
 export const createReservation = z.object({
-    date: z.coerce.date(),
+    date: z.coerce.date().refine(isValidReservationTime, {
+        message: "Reservation time must be within opening hours: 11:30–14:30 or 19:00–23:30"
+    }),
     guests: z.number(),
     notes: z.string().nullable().optional()
 })

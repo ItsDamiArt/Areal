@@ -60,6 +60,7 @@
         "regErr": "Error during registration",
         "loadErr": "Error during loading data",
         "createErr": "Error during creating process",
+        "invalidTime": "The selected time is outside our opening hours: 11:30AM–2:30PM or 7:00PM–11:30PM",
         "notFound": "Seems you'be been redirect into somewhere wrong, use the link below to navigate into HomePage"
     },
     "placeholder": {
