@@ -1,7 +1,6 @@
 import express from 'express';
 import expressSession from 'express-session';
 import cors from 'cors';
-import { logSession } from './middleware/requiredAuth';
 import { authRoutes } from './routes/user.routes';
 import dotenv from 'dotenv'
 import { ReservationRoutes } from './routes/reservation.routes';
@@ -34,8 +33,6 @@ app.use(cors({
     origin: 'http://localhost:5173',
     credentials:true
 }))
-
-app.use(logSession)
 
 authRoutes(app)
 ReservationRoutes(app)
