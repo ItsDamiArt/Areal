@@ -425,4 +425,4 @@ npm run dev
 - Input validation with **Zod** on both sides of the stack
 
 
-Developed by Federica Lecce - ItsDamiArt — Esercitazione 4
+Developed by Federica Lecce - ItsDamiArt — Esercitazione 3
