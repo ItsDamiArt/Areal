@@ -423,3 +423,6 @@ npm run dev
 - Sensitive routes are protected by the `requireAuth` middleware
 - CORS configured exclusively for the frontend origin
 - Input validation with **Zod** on both sides of the stack
+
+
+Developed by Federica Lecce - ItsDamiArt — Esercitazione 4
